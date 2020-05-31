@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Forward to Quick Look</title>
+        <script>
+            const query = new URLSearchParams(location.search);
+            const file = query.get('file');
+            const title = query.get('title');
+            var link = document.createElement('a');
+            link.rel = 'ar';
+            link.href = file;
+            const img = document.createElement('img');
+            link.appendChild(img);
+            link.click();
+        </script>
+    </head>
+</html>
